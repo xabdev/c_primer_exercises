@@ -32,7 +32,7 @@ int main1()
 // respectively. There are also two integer pointers named ptrA and ptrB. Assign the values
 // of 'a' and 'b' to ptrA and ptrB respectively, and display them.
 
-int main()
+int main2()
             {
                 int a, b;
                 std::cout << "Ingrese un int: ";
@@ -45,6 +45,39 @@ int main()
                 std::cout << "el valor del segundo int es "<< *ptrB << " en la direccion " << ptrB << std::endl;
                 return 0;
             }
+
+int main()
+            {
+                int n; int i; int max = 0;
+                std::cout << "Ingrese el tamaño del Array: ";
+                std::cin >> n;
+
+                std::cout << "Ingrese los valores del Array: ";
+                int arr[n];
+                for (i = 0; i < n; i++) {
+                    std::cin >> arr[i];
+                    }
+
+                for (int u = 0; u <= n; u++) {
+                    if (arr[u] > max)
+                        max = arr[u];
+                }
+
+            int *pointer = &max;
+
+            std::cout << "El valor mas alto en el Array se encuentra en: " << pointer;
+
+            return 0;
+
+            }
+
+
+
+
+
+
+
+
 
 
 
