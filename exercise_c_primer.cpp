@@ -46,7 +46,7 @@ int main2()
                 return 0;
             }
 
-int main()
+int main3()
             {
                 int n; int i; int max = 0;
                 std::cout << "Ingrese el tamaño del Array: ";
@@ -71,8 +71,26 @@ int main()
 
             }
 
+int main4()
+            {
+                int x;
+                int *ptr = &x;
+                std::cout << "ingrese un int: " << std::endl;
+                std::cin >> x;
+                std::cout << "el int ingresado es: " << *ptr << " en la direccion: " << ptr;
+            }
 
 
+
+int main()
+            {
+                char str[] = "A string.";
+                char *ptr = str;
+
+                std::cout << str[0] << " " << *ptr << ptr[3] << std::endl;
+                ptr += 2;
+                std::cout << *ptr << " " << ptr[2] << " " << ptr[5] << std::endl;
+            }
 
 
 
